@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../static/js/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+ <form action="" method="post">
+
+   <p>mch_id:<input type="text" name="mch_id" value="{{form.mch_id.data or ''}}"></p>
+   <p>channel:<input type="text" name="channel" value="{{form.channel.data or ''}}"></p>
+   <p>out_trade_no:<input type="text" name="out_trade_no" value="{{form.out_trade_no.data or ''}}"></p>
+
+    <p><input type="submit"></p>
+</form>
+
+  <table class="table table-bordered" style="width: 1000px;height: auto">
+        <tr>
+        <th>支付日期</th>
+        <th>商户号</th>
+        <th>商户订单号</th>
+        <th>支付渠道</th>
+        <th>交易金额</th>
+        <th>当前状态</th>
+        <th>操作</th>
+        </tr>
+        {% for item in orders %}
+            <tr>
+                <td>{{ item.time_end }}</td>
+                <td>{{ item.mch_id }}</td>
+                <td>{{ item.out_trade_no }}</td>
+                <td>{{ item.channel }}</td>
+                <td>{{ item.total_fee }}</td>
+                <td>{{ item.strade_state }}</td>
+                <td><a href="/allorder/order_detail">详情</a> | <a href="/allorder/refund/?out_trade_no={{ item.out_trade_no }}">退款</a></td>
+            </tr>
+        {% end %}
+    </table>
+
+    <a href="/">返回首页</a>
+
+        <div>
+            <ul class="pagination pagination-sm">
+                {% raw page_obj.a_num_pages() %}
+            </ul>
+
+        </div>
+
+
+</body>
+</html>

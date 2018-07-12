@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html style="background:#fff">
+    <head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+            <title>京东支付</title>
+        <link rel="icon" href="//static.360buyimg.com/finance/payment/receivable/1.2.0/css/i/ico.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="//sp.jd.com/payment/1.2.0/css/bankList.css">
+    <script type="text/javascript" src="//static.360buyimg.com/finance/payment/receivable/2.0.0/js/lib/jquery-1.6.4-min.js"></script>
+    <script type="text/javascript" src="//static.360buyimg.com/finance/payment/receivable/2.0.0/js/common.js"></script>
+    <link rel="stylesheet" type="text/css" href="//static.360buyimg.com/finance/payment/receivable/2.0.0/css/main.css">
+    <!--前景埋点-->
+    <script type="text/javascript" src="//static.360buyimg.com/finance/base/1.2.0/js/jdjrflow.js "></script>
+
+<script>
+    //js全局变量
+    var globalVar={
+        bankCardIsChecked:true,//银行卡产品被选中
+        quickPayIsChecked:true,//快捷绑定银行卡
+        canBeSubmit:true,//是否可提交
+        isVaildCVV2:false,//是否需要验证cvv2
+        isSignPay:false,//签约支付
+        isUseBalance:false,//是否勾选余额支付
+        isUserBank:false,//是否勾选银行卡
+        isUseBaiTiao:false, //是否勾选白条
+        isUseBaiTiaoFQ:false, //是否勾选白条分期
+        isUseBaiTiaoOne:false, //是否勾选白条1期
+        isUseXJK:false,//是否勾选小金库
+        isUseXJKFin:false,//是否勾选小金库理财账户
+        isNetBank:false//是否勾选网银
+    }
+    </script>
+
+
+
+    <script type="text/javascript" src="/misc/js/jdpay/common.js?verson="></script>
+    <script type="text/javascript" src="/misc/js/jdpay/login.js?verson="></script>
+    <script type="text/javascript" src="/misc/js/jdpay/quickpay.js?verson="></script>
+    <script type="text/javascript" src="/misc/js/jdpay/addCard.js?verson="></script>
+    <script type="text/javascript" src="/misc/js/jdpay/payCashier.js?verson="></script>
+    <script type="text/javascript" src="/misc/js/jdpay/baitiao.js?verson="></script>
+    <script type="text/javascript" src="/misc/js/jdpay/baitiaoFQ.js?verson="></script>
+    <script type="text/javascript" src="/misc/js/jdpay/baitiaoOne.js?verson="></script>
+    <script type="text/javascript" src="/misc/js/jdpay/payxjk.js?verson="></script>
+    <script type="text/javascript" src="/misc/js/jdpay/payxjkFin.js?verson="></script>
+    <script type="text/javascript" src="/misc/js/jdpay/bridge.js?verson="></script>
+    <script type="text/javascript" src="/misc/js/jdpay/weixin.js?verson="></script>
+
+
+
+
+
+</head>
+<body >
+        <!-- shortcut -->
+    <div class="p-header">
+        <div class="w clearfix">
+        	<div id="logo" class="fl">
+        		        			<img width="152" height="34" src="http://storage.jd.com/payment-assets/logo/2.0.0/jdpay-logo.png" alt="京东 收银台">
+        		            </div>
+            <div class="fr mt15">
+            		                        
+                                        &nbsp;您好！欢迎使用京东支付付款！
+                    <a href="javascript:login();" style="display: none;">[登录]</a>&nbsp;<a href="javascript:regist()" style="display: none;">[免费注册]</a>
+            </div>
+        </div>
+    </div>
+    <!-- shortcut end -->
+        <script>
+$(function(){
+            checkPayToolsState();
+    
+    setCardSelectHide();
+    payBankcard.setBankSelect();
+
+        
+             // 关闭全球购用户申报弹窗
+         paymentUI.hideModal('#userDeclareModal');            
+    	})
+		
+</script>
+
+        
+<div class="main main-bg">
+    <div class="w">
+        <!-- 结果信息 -->
+        <div class="result-pay-box">
+            <div class="result-pay result-pay-failure">
+                <div class="rp-box">
+
+                    <h2 class="rp-title"><em class="rp-ico"></em>系统校验支付签名异常，请核对签名后重新支付。</h2>
+
+                </div>
+            </div>
+
+            <div class="rp-btn-box" style="display: none;">
+                <a class="ui-button ui-button-XL" href="javascript:;">重新支付</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        
+
+<!-- 收银台 footer -->
+<div class="p-footer" style="background:#fff">
+    <div class="pf-wrap w">
+        <div class="pf-line">
+            <span class="pf-l-copyright">Copyright &copy; 2004-2017  京东JD.com 版权所有</span>
+            <img width="185" height="20" src="//static.360buyimg.com/finance/payment/receivable/1.0.0/css/i/footer-auth.png" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span>由网银在线（北京）科技有限公司提供技术支持</span>
+        </div>
+    </div>
+</div>
+
+	  <!-- 用户吐槽 -->
+	  <div class="side-btn">
+		<a class="feed-back" target="_blank" href="//ur.jr.jd.com/survey/show?id=153&u=&no="><span><b class="feed-d"></b><b class="feed-h"></b></span></a>
+		<!--<a class="jimi" href="javascript:"><span><b class="jimi-d"></b><b class="jimi-h"></b></span></a>-->
+      </div>
+
+        
+</body>
+</html>

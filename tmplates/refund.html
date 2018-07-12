@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <link href="../static/js/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <p>商户订单号: {{order.out_trade_no}}</p>
+    <p>交易金额: {{order.total_fee}}</p>
+
+    <form action="/allorder/refund/?out_trade_no={{ order.out_trade_no }}" method="post">
+        <input type="text" name="mch_id" value="{{ order.mch_id }}" hidden>
+        <input type="text" name="total_fee" value="{{ order.total_fee }}" hidden>
+        <input type="text" name="op_user_id" value="{{ order.mch_id }}" hidden>
+        <input type="text" name="out_trade_no" value="{{ order.out_trade_no }}" hidden>
+        <input type="text" name="channel" value="{{ order.channel }}" hidden>
+        <p>退款金额:<input type="text" name="refund_fee" value="{{ order.total_fee }}"></p>
+        <!--<button type="submit" class="btn btn-success">-->
+        <button type="submit" class="btn btn-primary">提交</button>
+    </form>
+</body>
+</html>

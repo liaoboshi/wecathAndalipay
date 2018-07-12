@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+
+</head>
+<body>
+
+    <div id="output" ></div>
+
+
+    <div id="res" hidden>{{ result }}</div>
+
+
+    <p><a href="/">返回首页</a></p>
+
+    <script src="../static/js/jquery-3.1.1.js"></script>
+    <script src="../static/js/qrcode.js"></script>
+    <script src="../static/js/jquery.qrcode.min.js"></script>
+
+    <script>
+        $('#output').qrcode($('#res').text())
+    </script>
+</body>
+</html>
