@@ -1120,3 +1120,13 @@ NoneType
 NoneType
 2018-07-12 10:14:16,510 /Users/liaoboshi/git_test/wecathAndalipay/server/server.py 349 ERROR    请求url : http://mapi.bosc.uline.cc/wechat/orders/close,关闭了订单 : 810000258311020180712101343,关闭订单请求信息 : sign=36E692511CC4E649509D13A29168B0F5 & nonce_str=e05caa171edc6b4ff762c2913458c7 & mch_id=100002583110 & out_trade_no=810000258311020180712101343
 NoneType
+2018-07-13 15:35:22,215 /Users/liaoboshi/git_test/wecathAndalipay/server/server.py 321 ERROR    请求url : http://mapi.bosc.uline.cc/wechat/orders,创建了订单 : 810000258311020180713153520,订单信息 : body=奶粉钱 & spbill_create_ip=192.168.21.117 & mch_id=100002583110 & nonce_str=4ff0fdc8f6ba1b8aca4e5d6c81ab9e & notify_url=112233 & sign=88E15AFE4C5D9E86973D814BFD159971 & product_id=202135675b8c2a12c25b4c5fb7ed8c & out_trade_no=810000258311020180713153520 & trade_type=NATIVE & total_fee=1
+NoneType
+2018-07-13 15:35:52,222 /Users/liaoboshi/git_test/wecathAndalipay/server/server.py 192 ERROR    请求url : http://mapi.bosc.uline.cc/wechat/orders/query,查询了订单 : 810000258311020180713153520,查询订单请求信息 : sign=54B7931AF980755C4C2E74212A3166A6 & mch_id=100002583110 & out_trade_no=810000258311020180713153520 & nonce_str=2a15669d6294e8855a5c37fd5703d3
+NoneType
+2018-07-13 15:35:54,085 /Users/liaoboshi/git_test/wecathAndalipay/server/server.py 349 ERROR    请求url : http://mapi.bosc.uline.cc/wechat/orders/close,关闭了订单 : 810000258311020180713153520,关闭订单请求信息 : sign=297A229CF9E6CD1A1DD2205D99993F00 & mch_id=100002583110 & out_trade_no=810000258311020180713153520 & nonce_str=ff96f682a57f6a77596c536b310663
+NoneType
+2018-07-16 09:53:34,837 /Users/liaoboshi/git_test/wecathAndalipay/server/server.py 194 ERROR    请求url : http://mapi.bosc.uline.cc/alipay/orders/query,查询了订单 : 810000258311020180716095302,查询订单请求信息 : mch_id=100002583110 & sign=653354B2E20A86CB365B8A21E411DBED & out_trade_no=810000258311020180716095302 & nonce_str=4d485ff61555b2cea73128b2a98271
+NoneType
+2018-07-16 09:53:37,901 /Users/liaoboshi/git_test/wecathAndalipay/server/server.py 526 ERROR    请求url : http://mapi.bosc.uline.cc/alipay/orders/close,关闭了订单 : 810000258311020180716095302,关闭订单请求信息 : mch_id=100002583110 & sign=A132EFC189D318353A95DD0BE1CE5993 & out_trade_no=810000258311020180716095302 & nonce_str=43f9b8627d328a015b130707450401
+NoneType

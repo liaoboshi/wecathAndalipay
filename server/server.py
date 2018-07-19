@@ -29,6 +29,8 @@ settings = {
     'static_url_prefix':'/static/',
 }
 
+
+#测试用
 KURL = 'http://mapi.bosc.uline.cc'
 # KURL = 'http://120.78.25.154'
 # MCH_ID = '100078521322'
@@ -466,6 +468,7 @@ class AlipayN(tornado.web.RequestHandler):
         dic['out_trade_no'] = create_order(dic['mch_id'])
         dic['detail']= '备注信息'
         dic['timeout_express'] = '1m'
+        dic['attach'] = '12345678'
 
 
         # 生成sign
