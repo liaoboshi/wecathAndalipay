@@ -98,3 +98,5 @@ NoneType
 NoneType
 2018-06-07 11:13:42,252 /Users/liaoboshi/PycharmProjects/wecahtAndalipay/server/server.py 349 ERROR    请求url : http://api.mch.spd.uline.cc/wechat/orders ,错误是 : 201 商户订单号重复，传入的参数是 : out_trade_no=abc123 & sign=E31C040874BC4CEF18B3E23E94539427 & spbill_create_ip=192.168.1.129 & total_fee=1 & nonce_str=fb3d84c7d1e584bbf0d55862000c21 & product_id=29fad963f71b88875daf20c1952939 & mch_id=100015666075 & body=奶粉钱 & notify_url=112233 & trade_type=NATIVE
 NoneType
+2018-07-20 14:39:10,803 /Users/liaoboshi/git_test/wecathAndalipay/server/server.py 363 ERROR    请求url : http://mapi.bosc.uline.cc/wechat/orders ,错误是 : total_fee is require，传入的参数是 : out_trade_no=810000258311020180720143910 & mch_id=100002583110 & nonce_str=894321dcf1c8b509ff27d5ff93a54f & body=奶粉钱 & notify_url=112233 & spbill_create_ip=192.168.2.60 & total_fee= & sign=693F480F7901326CAE8769D1B0815F03 & product_id=6c6850f57c95e94cea726179808a86 & trade_type=NATIVE
+NoneType

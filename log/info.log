@@ -1130,3 +1130,31 @@ NoneType
 NoneType
 2018-07-16 09:53:37,901 /Users/liaoboshi/git_test/wecathAndalipay/server/server.py 526 ERROR    请求url : http://mapi.bosc.uline.cc/alipay/orders/close,关闭了订单 : 810000258311020180716095302,关闭订单请求信息 : mch_id=100002583110 & sign=A132EFC189D318353A95DD0BE1CE5993 & out_trade_no=810000258311020180716095302 & nonce_str=43f9b8627d328a015b130707450401
 NoneType
+2018-07-20 14:39:16,301 /Users/liaoboshi/git_test/wecathAndalipay/server/server.py 323 ERROR    请求url : http://mapi.bosc.uline.cc/wechat/orders,创建了订单 : 810000258311020180720143915,订单信息 : out_trade_no=810000258311020180720143915 & mch_id=100002583110 & nonce_str=18a74dda96792266a919057e4e25cc & body=奶粉钱 & notify_url=112233 & spbill_create_ip=192.168.2.60 & total_fee=1 & sign=6C293E5F6676F5772647FB557D0156E4 & product_id=0bab21c81c99f32658d564121741a2 & trade_type=NATIVE
+NoneType
+2018-07-20 14:39:46,309 /Users/liaoboshi/git_test/wecathAndalipay/server/server.py 194 ERROR    请求url : http://mapi.bosc.uline.cc/wechat/orders/query,查询了订单 : 810000258311020180720143915,查询订单请求信息 : mch_id=100002583110 & out_trade_no=810000258311020180720143915 & nonce_str=71e776e42ca4a15d7d782ea9446f49 & sign=8F26808DA72A4B84E8DE8C8F093B59B2
+NoneType
+2018-07-20 14:39:46,791 /Users/liaoboshi/git_test/wecathAndalipay/server/server.py 351 ERROR    请求url : http://mapi.bosc.uline.cc/wechat/orders/close,关闭了订单 : 810000258311020180720143915,关闭订单请求信息 : mch_id=100002583110 & out_trade_no=810000258311020180720143915 & nonce_str=ad1426069cc1f4b12facb182c79201 & sign=16DA44F8D78C83A4515D9E200AE74198
+NoneType
+2018-07-20 14:40:03,665 /Users/liaoboshi/git_test/wecathAndalipay/server/server.py 323 ERROR    请求url : http://mapi.bosc.uline.cc/wechat/orders,创建了订单 : 810000258311020180720144003,订单信息 : out_trade_no=810000258311020180720144003 & mch_id=100002583110 & nonce_str=878334a327039815c9dbe2b1822d65 & body=奶粉钱 & notify_url=112233 & spbill_create_ip=192.168.2.60 & total_fee=1 & sign=8843C9A35441DA64BA0BAEC7CBCAF7F8 & product_id=0fc74f463336edac764ce1eaf81ca0 & trade_type=NATIVE
+NoneType
+2018-07-20 14:40:33,671 /Users/liaoboshi/git_test/wecathAndalipay/server/server.py 194 ERROR    请求url : http://mapi.bosc.uline.cc/wechat/orders/query,查询了订单 : 810000258311020180720144003,查询订单请求信息 : mch_id=100002583110 & out_trade_no=810000258311020180720144003 & nonce_str=38b61b53d0ea1bf60733d09d91e7f6 & sign=17B51EFE365C8692E743953682FEECB3
+NoneType
+2018-07-20 14:40:34,071 /Users/liaoboshi/git_test/wecathAndalipay/server/server.py 351 ERROR    请求url : http://mapi.bosc.uline.cc/wechat/orders/close,关闭了订单 : 810000258311020180720144003,关闭订单请求信息 : mch_id=100002583110 & out_trade_no=810000258311020180720144003 & nonce_str=f331aa3370693e01033a64c33d6130 & sign=DEB20AA587C451EADFFCA970007DA11D
+NoneType
+2018-07-20 14:45:49,694 /Users/liaoboshi/git_test/wecathAndalipay/server/server.py 323 ERROR    请求url : http://mapi.bosc.uline.cc/wechat/orders,创建了订单 : 810000258311020180720144549,订单信息 : out_trade_no=810000258311020180720144549 & mch_id=100002583110 & nonce_str=22dc37db249edf825c43508fa73c74 & body=奶粉钱 & notify_url=112233 & spbill_create_ip=192.168.2.60 & total_fee=1 & sign=16D7AA980EF830A4E06E3E9E8312C65E & product_id=1b2aa385a4497c05bfcd1b4b732b25 & trade_type=NATIVE
+NoneType
+2018-07-20 14:46:19,701 /Users/liaoboshi/git_test/wecathAndalipay/server/server.py 194 ERROR    请求url : http://mapi.bosc.uline.cc/wechat/orders/query,查询了订单 : 810000258311020180720144549,查询订单请求信息 : mch_id=100002583110 & out_trade_no=810000258311020180720144549 & nonce_str=615b4ec232e13c16cc774f7eb3f054 & sign=007750880A037C0EE313072E146517C1
+NoneType
+2018-07-20 14:46:20,079 /Users/liaoboshi/git_test/wecathAndalipay/server/server.py 351 ERROR    请求url : http://mapi.bosc.uline.cc/wechat/orders/close,关闭了订单 : 810000258311020180720144549,关闭订单请求信息 : mch_id=100002583110 & out_trade_no=810000258311020180720144549 & nonce_str=795ee0c5b3822508fb31a23bc03065 & sign=86FCAD23707DB0C8E06B5D5BF7E05F83
+NoneType
+2018-08-03 15:22:08,296 /Users/liaoboshi/git_test/wecathAndalipay/server/server.py 327 ERROR    请求url : http://mapi.bosc.uline.cc/wechat/orders,创建了订单 : 810000368857820180803152207,订单信息 : product_id=7016ec9ce36736fcc454b21a3ada7c & sign=E3EC33AAD8A5570D9C7058BBEE794D18 & spbill_create_ip=192.168.2.60 & trade_type=NATIVE & total_fee=1 & nonce_str=1fc653a27be6f9fc56c8e8c03d3a07 & body=奶粉钱 & mch_id=100003688578 & notify_url=112233 & out_trade_no=810000368857820180803152207
+NoneType
+2018-08-03 15:22:38,305 /Users/liaoboshi/git_test/wecathAndalipay/server/server.py 198 ERROR    请求url : http://mapi.bosc.uline.cc/wechat/orders/query,查询了订单 : 810000368857820180803152207,查询订单请求信息 : nonce_str=4eb796b0defdd2069385b86a995db4 & sign=589C256F2CAED6C1420FA5B9224E1A4A & mch_id=100003688578 & out_trade_no=810000368857820180803152207
+NoneType
+2018-08-03 15:22:39,331 /Users/liaoboshi/git_test/wecathAndalipay/server/server.py 355 ERROR    请求url : http://mapi.bosc.uline.cc/wechat/orders/close,关闭了订单 : 810000368857820180803152207,关闭订单请求信息 : nonce_str=7cd8a0f767687a41447d942be09063 & sign=A0B1804F62AC10E9585F70F18A4B0A70 & mch_id=100003688578 & out_trade_no=810000368857820180803152207
+NoneType
+2018-08-16 17:08:42,363 /Users/liaoboshi/git_test/wecathAndalipay/server/server.py 203 ERROR    请求url : http://mapi.bosc.uline.cc/alipay/orders/query,查询了订单 : 810000318876220180816170811,查询订单请求信息 : mch_id=100003188762 & out_trade_no=810000318876220180816170811 & sign=D58A13CD5A0FE7773B27639CA7FC550D & nonce_str=b48d1b381a1ba062b53da2ee10747b
+NoneType
+2018-08-16 17:08:42,623 /Users/liaoboshi/git_test/wecathAndalipay/server/server.py 535 ERROR    请求url : http://mapi.bosc.uline.cc/alipay/orders/close,关闭了订单 : 810000318876220180816170811,关闭订单请求信息 : mch_id=100003188762 & out_trade_no=810000318876220180816170811 & sign=FC6BCA5DD011567B4E43E22E60156F34 & nonce_str=8e5baf9a70daef008e81bace175c9e
+NoneType
